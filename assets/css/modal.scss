@@ -1,0 +1,453 @@
+$mobile : 600px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+
+.close{
+padding: 25px 25px;
+}
+
+
+#modal-little-feet-contain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    background-color: beige;
+    visibility: hidden;
+    border-radius: 15px;
+
+    #modal-little-feet-header{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+       span a{
+            text-decoration: none;
+            padding: 25px 25px;
+            align-self: auto;
+        }
+    }
+    #modal-little-feet-body{
+        position: absolute;
+        left: 30px;
+        top: 40px;
+
+        .image-description{
+            position: relative;
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+
+            .modal-project-image{
+                position: relative;
+                width: 100%;
+                height: 50%;
+            }
+            .link{
+                margin-top: 10px;
+                p a{
+                    margin: 15px 35px 15px 35px;
+                    text-decoration: none;
+                    color: rgb(21, 21, 243);
+                }
+            }
+        }
+        .modal-project-tech{
+            position: relative;
+            width: 30%;
+            height: 100%;
+            float: right;
+            clear: both;
+            margin-right: 10px;
+            margin-top: 45px;
+            
+            .modal-project-tech-used{
+                position: relative;
+                width: 80%;
+                clip-path: polygon(100% 100%, 100% 0, 87% 8%, 12% 9%, 0 0, 0 100%, 15% 93%, 87% 92%);
+                border-radius: 15px;
+                background-color: black;
+                padding: 5px;
+                text-align: center;
+
+
+                .modal-project-tech-text{
+                    color: beige;
+                    text-transform: uppercase;
+                }
+                .modal-project-tech-img{
+                    position: relative;
+                    width: 35px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+#modal-little-feet{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+
+#modal-little-feet:target{
+    z-index: 10;
+    visibility: visible;
+    #modal-little-feet-contain{
+        visibility: visible;
+    }
+}
+
+
+
+// //////////////////     2         /////////////
+
+
+#modal-movie-finder-contain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    background-color: beige;
+    visibility: hidden;
+    border-radius: 15px;
+
+    #modal-movie-finder-header{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        span a{
+            text-decoration: none;
+            padding: 25px 25px;
+
+        }
+    }
+    #modal-movie-finder-body{
+        position: absolute;
+        left: 30px;
+        top: 40px;
+
+        .image-description{
+            position: relative;
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+
+            .modal-project-image{
+                position: relative;
+                width: 100%;
+                height: 50%;
+            }
+
+            .link{
+                margin-top: 10px;
+               p a{
+                    margin: 15px 35px 15px 35px;
+                    text-decoration: none;
+                }
+            }
+        }
+        .modal-project-tech{
+            position: relative;
+            width: 30%;
+            height: 100%;
+            float: right;
+            clear: both;
+            margin-right: 10px;
+            margin-top: 45px;
+            
+            .modal-project-tech-used{
+                position: relative;
+                width: 80%;
+                clip-path: polygon(100% 100%, 100% 0, 87% 8%, 12% 9%, 0 0, 0 100%, 15% 93%, 87% 92%);
+                border-radius: 15px;
+                background-color: black;
+                padding: 5px;
+                text-align: center;
+
+
+                .modal-project-tech-text{
+                    color: beige;
+                    text-transform: uppercase;
+                }
+                .modal-project-tech-img{
+                    position: relative;
+                    width: 35px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+#modal-movie-finder{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+}
+
+#modal-movie-finder:target{
+    z-index: 10;
+    visibility: visible;
+    #modal-movie-finder-contain{
+        visibility: visible;
+    }
+}
+
+#close2:target{
+    z-index: -5;
+    visibility: hidden;
+    #modal-movie-finder-contain{
+        visibility: hidden;
+    }
+}
+
+
+/////////////////////   3       ///////////////
+
+
+
+#modal-friend-finder-contain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    background-color: beige;
+    visibility: hidden;
+    border-radius: 15px;
+
+    #modal-friend-finder-header{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+       span a{
+            text-decoration: none;
+            padding: 25px 25px;
+        }
+    }
+    #modal-friend-finder-body{
+        position: absolute;
+        left: 30px;
+        top: 40px;
+
+        .image-description{
+            position: relative;
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+
+            .modal-project-image{
+                position: relative;
+                width: 100%;
+                height: 50%;
+            }
+            
+            .link{
+                margin-top: 10px;
+               p a{
+                    margin: 15px 35px 15px 35px;
+                    text-decoration: none;
+                    color: rgb(21, 21, 243);
+                }
+            }
+        }
+        .modal-project-tech{
+            position: relative;
+            width: 30%;
+            height: 100%;
+            float: right;
+            clear: both;
+            margin-right: 10px;
+            margin-top: 45px;
+            
+            .modal-project-tech-used{
+                position: relative;
+                width: 80%;
+                clip-path: polygon(100% 100%, 100% 0, 87% 8%, 12% 9%, 0 0, 0 100%, 15% 93%, 87% 92%);
+                border-radius: 15px;
+                background-color: black;
+                padding: 5px;
+                text-align: center;
+
+
+                .modal-project-tech-text{
+                    color: beige;
+                    text-transform: uppercase;
+                }
+                .modal-project-tech-img{
+                    position: relative;
+                    width: 35px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+#modal-friend-finder{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+
+#modal-friend-finder:target{
+    z-index: 10;
+    visibility: visible;
+    #modal-friend-finder-contain{
+        visibility: visible;
+    }
+}
+
+#close3:target{
+    z-index: -5;
+    visibility: hidden;
+    #modal-friend-finder-contain{
+        visibility: hidden;
+    }
+}
+
+
+
+///////////////////////    4    ///////////
+
+
+#modal-gif-finder-contain{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    height: 80vh;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+    background-color: beige;
+    visibility: hidden;
+    border-radius: 15px;
+
+    #modal-gif-finder-header{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+       span a{
+            text-decoration: none;
+            padding: 25px 25px;
+        }
+    }
+    #modal-gif-finder-body{
+        position: absolute;
+        left: 30px;
+        top: 40px;
+
+        .image-description{
+            position: relative;
+            width: 60%;
+            height: 100%;
+            display: inline-block;
+
+            .modal-project-image{
+                position: relative;
+                width: 100%;
+                height: 50%;
+            }
+            
+            .link{
+                margin-top: 10px;
+               p a{
+                    margin: 15px 35px 15px 35px;
+                    text-decoration: none;
+                    color: rgb(21, 21, 243);
+                }
+            }
+        }
+        .modal-project-tech{
+            position: relative;
+            width: 30%;
+            height: 100%;
+            float: right;
+            clear: both;
+            margin-right: 10px;
+            margin-top: 45px;
+            
+            .modal-project-tech-used{
+                position: relative;
+                width: 80%;
+                clip-path: polygon(100% 100%, 100% 0, 87% 8%, 12% 9%, 0 0, 0 100%, 15% 93%, 87% 92%);
+                border-radius: 15px;
+                background-color: black;
+                padding: 5px;
+                text-align: center;
+
+
+                .modal-project-tech-text{
+                    color: beige;
+                    text-transform: uppercase;
+                }
+                .modal-project-tech-img{
+                    position: relative;
+                    width: 35px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+#modal-gif-finder{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+
+#modal-gif-finder:target{
+    z-index: 10;
+    visibility: visible;
+    #modal-gif-finder-contain{
+        visibility: visible;
+    }
+}
+
+#close4:target{
+    z-index: -5;
+    visibility: hidden;
+    #modal-gif-finder-contain{
+        visibility: hidden;
+    }
+}
+

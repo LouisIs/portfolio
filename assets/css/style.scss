@@ -1,0 +1,497 @@
+$mobile : 600px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#projects-tab{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+
+    .left{
+        position: relative;
+        width: 45%;
+        display: inline-block;
+        margin: 0;
+
+        .projects{
+            position: relative;
+            width: 70%;
+            height: 50%;
+            margin: 0 0 15px 0;
+
+            img{
+                position: relative;
+                width: 100%;
+                height: 90%;
+                display: inline-block;
+            }
+
+            .details{
+                position: relative;
+                display: inline-block;
+                width: 70%;
+                height: 10%;
+                margin-left: 0;
+
+                .tech-used{
+                    position: relative;
+                    width: 10%;
+                    height: 10%;
+                }
+            }
+            .project-image{
+                border: 3px solid black;
+            }
+        }
+
+    }
+
+    .right{
+        position: relative;
+        width: 45%;
+        display: inline-block;
+        margin: 0;
+
+        .projects{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            margin: 0 0 15px 0;
+
+            img{
+                position: relative;
+                width: 70%;
+                height: 90%;
+                display: inline-block;
+            }
+
+            .details{
+                position: relative;
+                display: inline-block;
+                width: 70%;
+                height: 10%;
+                margin-left: 0;
+
+                .tech-used{
+                    position: relative;
+                    width: 10%;
+                    height: 10%;
+                }
+            }
+            .project-image{
+                border: 3px solid black;
+            }
+        }
+    }
+}
+
+#main-contain{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+#contain{
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+#header{
+    height: 5%;
+    background-color: beige;
+}
+
+#tab{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    ul li:nth-child(1){
+        background-color: beige;
+        width: 10%;
+        @include mobile{
+            width: 100%;
+            height: 10%;
+        }
+
+        .title{
+            transform: rotate(-90deg);
+            color: black;
+            @include mobile{
+                width: 100%;
+                transform: rotate(0);
+                margin-top: 10px;
+                font-size: large;
+            }
+        }
+    }
+
+    ul li:nth-child(2){
+    background-color: black;
+        width: 70%;
+        @include mobile{
+            width: 100%;
+            height: 70%;
+        }
+
+        .title{
+            transform: rotate(0deg);
+            @include mobile{
+                width: 100%;
+                margin-top: 10px;
+                font-size: large;
+            }
+        }
+    }
+
+    ul li:nth-child(3){
+        background-color: beige;
+        width: 10%;
+        @include mobile{
+            width: 100%;
+            height: 10%;
+        }
+
+        .title{
+            transform: rotate(-90deg);
+            color: black;
+            @include mobile{
+                width: 100%;
+                transform: rotate(0);
+                margin-top: 10px;
+                font-size: large;
+            }
+        }
+    }
+
+    ul li:nth-child(4){
+    background-color: black;
+        width: 10%;
+        @include mobile{
+            width: 100%;
+            height: 10%;
+        }
+        .title{
+            transform: rotate(-90deg);
+            @include mobile{
+                width: 100%;
+                transform: rotate(0);
+                margin-top: 10px;
+                font-size: large;
+            }
+        }
+    }
+
+    ul:hover{
+        li{
+            animation-delay: 0.2s;
+            width: 10%;
+            @include mobile{
+                width: 100%;
+                height: 10%;
+            }
+            .title{
+                transform: rotate(-90deg);
+                @include mobile{
+                    transform: rotate(0);
+                }
+            }
+            @include mobile{
+                .tab-text{
+                    right: -100%;
+                }
+            }
+            #welcom{
+                bottom: -100%;
+                @include mobile{
+                    bottom:0;
+                    right: -100%;
+                }
+            }
+        }
+        
+        
+    }
+
+
+    ul{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        width: 100%;
+
+        li{
+            position: relative;
+            height: 100%;
+            list-style: none;
+            float: left;
+            margin: 0;
+            transition: 0.5s;
+            overflow: hidden;
+
+
+            .tab-text{
+                position: absolute;
+                bottom: -100%;
+                text-align: center;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+                color: beige;
+                @include mobile{
+                    bottom: 0;
+                    right: -100%;
+                }
+            }
+            
+            #welcom{
+                position: absolute;
+                bottom: 40%;
+                // left: 45px;
+                margin-left: 25%;
+                letter-spacing: 0.1em;
+                line-height: 2.3rem;
+                color: beige;
+                font-size: 1.5rem;
+                transition: 0.5s;
+                @include mobile{
+                    max-width: 90%;
+                    bottom: 20%;
+                    // left: 5%;
+                    margin-left: 5%;
+                    letter-spacing: 0.1em;
+                    line-height: 2rem;
+                    font-size: 1.2rem;
+                }
+
+                #launch{
+                    position: relative;
+                    background-color: rgba(100, 158, 180, 0.3);
+                    width: 400px;
+                    text-align: center;
+                    margin-top: 0%;
+                    @include mobile{
+                        visibility: hidden;
+                    }
+
+                }
+            }
+
+            .title{
+                text-transform: uppercase;
+                transform: rotate(-90deg);
+                color: beige;
+                margin-top: 150px;
+                margin-left: 25px;
+                font-size: 2rem;
+                font-weight: bold;
+                transition: 0.5s;
+            }
+
+        }
+
+        li:hover{
+            width: 70%;
+            @include mobile{
+                width: 100%;
+                height: 70%;
+            }
+            .tab-text{
+                height: 75vh;
+                bottom: 0;
+                transition: 0.5s;
+                transition-delay: 0.5s;
+                opacity: 1;
+                @include mobile{
+                    top: 50px;
+                    right: 5px;
+                    height: 100%;
+                }
+            }
+            .title{
+                margin-top: 15px;
+                text-transform: uppercase;
+                transform: rotate(0deg);
+            }
+            #welcom{
+                bottom: 40%;
+
+                    @include mobile{
+                        right: 15px;
+                        max-width: 90%;
+                        bottom: 20%;
+                        margin-left: 5%;
+                        letter-spacing: 0.1em;
+                        line-height: 2rem;
+                        font-size: 1.2rem;
+                    }
+            }
+        }
+    }
+   
+}
+
+#launch:hover{
+    cursor: default;
+    i{
+        width: +10%;
+        height: +10%;
+    }
+}
+
+#about{
+    position: relative;
+    width: 100%;
+    height: 90%;
+}
+
+#logos{
+    position: relative;
+    display: block;
+    width: 50%;
+    height: 10%;
+    padding: 15px;
+    border-bottom: solid 1px black;
+    border-left: none;
+    border-right: none;
+    float: right;
+    margin-bottom: 10px;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    @include mobile{
+        display: none;
+    }
+
+    img{
+        display: inline-block;
+        position: relative;
+        width: 10%;
+        height: 35px;
+    }
+}
+
+#name{
+    display: inline-block;
+}
+
+#phone-email{
+    display: inline-block;
+    // border-left: 2px solid beige;
+    margin: 5px;
+    padding: 5px; 
+    #email{
+        text-transform: uppercase;
+    }
+}
+
+#contact{
+    background-color: rgba(100, 158, 180, 0.3);
+    color: rgb(224, 224, 4);   
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+    letter-spacing: 0.1em;
+    line-height: 2.3rem;
+    font-size: 1.1rem;
+}
+
+#who-i-am{
+    width: 50%;
+    float: left;
+    height: 90%;
+    max-height: 90%;
+
+
+    #introduction{
+        margin: 5px 5px 20px 5px;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        box-shadow: 2px 2px 5px 0px  black;
+        background-color: black;
+        padding: 10px;
+
+        @include mobile{
+            margin: 5px;
+        }
+    }
+
+    #photo{
+        clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        border: black solid 5px;
+        box-shadow: 2px 2px 5px 0px  black;
+        background-image: url('./images/thomas.jpeg');
+        background-size: cover;
+        width: 15em;
+        height: 15em;
+        margin-left: 20%;
+        margin-bottom: 20px;
+
+        @include mobile{
+            width: 7em;
+            height: 7em;
+            background-size: cover;
+            margin-bottom: 5px;
+        }
+    }
+    
+}
+
+
+
+#skills{
+    float: right;
+    width: 50%;
+    height: 90%;
+    max-height: 90%;
+
+    .skill{
+        clip-path: polygon(100% 100%, 100% 0, 87% 8%, 12% 9%, 0 0, 0 100%, 15% 93%, 87% 92%);
+        width: 50%;
+        height: 5%;
+        list-style: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-left: 20%;
+        border-radius: 15px;
+        background-color: black;
+        padding: 5px;
+    }
+}
+
+
+
+.title-0{
+    color: black;
+}
+
+#footer{
+    height: 5%;
+    background-color: black;
+}
+
+#linkedin{
+    font-size: 1.1rem;
+    color: rgb(224, 224, 4);
+}
