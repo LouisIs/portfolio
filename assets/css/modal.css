@@ -9,7 +9,7 @@
   height: 80vh;
   transform: translate(-50%, -50%);
   transition: 0.2s;
-  background-image: url(././images/programming-coding.jpg);
+  background-image: url(../../images/programming-coding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: beige;
@@ -92,7 +92,7 @@
   transform: translate(-50%, -50%);
   transition: 0.2s;
   background-color: beige;
-  background-image: url(././images/programming-coding.jpg);
+  background-image: url(../../images/programming-coding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   visibility: hidden;
@@ -184,7 +184,7 @@
   transform: translate(-50%, -50%);
   transition: 0.2s;
   background-color: beige;
-  background-image: url(././images/programming-coding.jpg);
+  background-image: url(../../images/programming-coding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   visibility: hidden;
@@ -272,7 +272,7 @@
   transform: translate(-50%, -50%);
   transition: 0.2s;
   background-color: beige;
-  background-image: url(././images/programming-coding.jpg);
+  background-image: url(../../images/programming-coding.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   visibility: hidden;

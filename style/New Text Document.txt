@@ -12,5 +12,5 @@
 }
 body {
     background-color: #AD2124;
-    background-image: url(./animation/background.gif);
+    background-image: url(../animation/background.gif);
 }

@@ -4,22 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>about</title>
-  <link href="./style/style.css" rel="stylesheet" type="text/css">
+  <link href="../style/style.css" rel="stylesheet" type="text/css">
   <style type="text/css">
     #banner {
-
-      overflow: auto;
-      height: auto;
-
+      background-color: #F42E53;
+      overflow: hidden;
+      height: 114px;
     }
 
     #container {
       background-color: #3FCEF3;
       overflow: hidden;
-      /* width: 1024px; */
-      /* height: 768px; */
-      width: 80vw;
-      height: 100vh;
+      width: 1024px;
+      height: 768px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 50%;
@@ -28,9 +25,6 @@
       top: auto;
     }
 
-    table{
-      padding-bottom: 200px;
-    }
     .element {
       align-content: center;
       text-align: center;
@@ -50,7 +44,8 @@
     }
 
     body {
-      background-image: url(./animation/background.gif);
+      background-color: #AD2124;
+      background-image: url(../animation/background.gif);
     }
 
 
@@ -58,14 +53,9 @@
       overflow: auto;
       height: 100%;
       /* height: 624px; */
-      background-image: url(./images/kidmograph-09.jpg);
+      background-image: url(../images/kidmograph-09.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
     }
 
     #footer {
@@ -77,18 +67,19 @@
       height: 624px;
       width: 1024px;
     }
+ 
 
-    #my_photo {
+    .my_photo {
       height: auto;
-      width: 512px;
+      width: auto;
       text-shadow: 3px 2px;
       text-align: center;
       margin-top: auto;
       overflow: hidden;
-
     }
 
     #my_image {
+
       border-radius: 40%;
       border-width: thick;
       -webkit-box-shadow: 5px 5px;
@@ -97,17 +88,18 @@
       margin-bottom: 20px;
     }
 
-    #skils {
-      height: 624px;
-      width: 510px;
+    .skils {
+      height: auto;
+      width: auto;
       top: auto;
-      overflow: auto;
+      overflow: hidden;
     }
 
     #letter {
       color: #FFFFFF;
       font-size: x-large;
       background-color: #141367;
+
     }
 
     h1 {
@@ -115,36 +107,9 @@
       color: #E9F3C0;
       font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
       font-size: 50px;
+      padding: 0px;
+      margin-bottom: 5px;
     }
-
-    a:link {
-      color: #FFFFFF;
-    }
-
-    a:visited {
-      color: #D0D37D;
-    }
-
-    a:hover {
-      color: #D30CF7;
-    }
-
-    /*  .element{
-    align-content: center;
-    text-align: center;
-    font-size: 30px;
-    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
-    color: #FFFFFF;
-    font-weight: bolder;
-    background-color: #4B14D0;
-    background-size: auto 10px;
-    margin-top: 2px;
-    border-radius: 50px;
-    margin-bottom: 8px;
-    padding-left: 0vw;
-    padding-top: 0vw;
-    padding-right: 0vw;
-    padding-bottom: 0vw; */
   </style>
   <script type="text/javascript">
     function MM_preloadImages() { //v3.0
@@ -195,46 +160,63 @@
 </head>
 
 <body leftmargin="0" topmargin="0"
-  onLoad="MM_preloadImages('./images/navigation/3_projects_r.gif','./images/navigation/2_about_me_r.gif','./images/navigation/4_contact_r.gif','./images/navigation/All_one.gif')">
+  onLoad="MM_preloadImages('../images/navigation/3_projects_r.gif','../images/navigation/2_about_me_r.gif','../images/navigation/4_contact_r.gif','../images/navigation/All_one.gif')">
   <div id="container">
-    <div id="banner"><a href="index.html"><img src="./animation/images/1.gif" width="100%" height="100%" alt="" /></a>
+    <div id="banner"><a href="index.html"><img src="../animation/images/1.gif" width="1024" height="114" alt="" /></a>
     </div>
     <div id="content">
       <table width="1020" height="652" border="0">
+        <caption>My projects</caption>
         <tbody>
+
+
+
+
+
+
           <tr>
             <td>
-              <div id="my_photo">
-                <h1>About Me</h1>
-                <img src="./images/pop_up/IMG_0455.gif" alt="" width="300" height="430" id="my_image" />
+              <div class="my_photo">
+                <img src="../images/1placeholder.jpg" width="254" height="107" alt="" />
               </div>
-              <div id="letter">Hello. my name is Traore R.Israel Louis Yvan. I am a .Net developer recently graduated
-                .<br> I have a overall experience of 4 years in programing </div>
+
             </td>
             <td>
-              <div id="skils">
-                <div class="element">C#</div>
-                <div class="element">HTML CSS3 Java Script</div>
-                <div class="element">Web D</div>
-                <div class="element">PHP</div>
-                <div class="element">JAVA</div>
-                <div class="element">ASP.Net web app</div>
-                <div class="element">.Net Core MVC</div>
-
-
-                <div class="element">UNIX Operating System</div>
-                <div class="element">Shell Scripting</div>
-                <div class="element">PhotoShop</div>
-
-                <div class="element">Android Studio</div>
-                <div class="element">Microsoft SQL server</div>
-                <div class="element">MySQL</div>
-                <div class="element">Access</div>
-
+              <div class="skils">
+                <img src="../images/2placeholder.jpg" width="253" height="96" alt="" />
               </div>
             </td>
 
           </tr>
+          <tr>
+            <td>
+              <div class="my_photo">
+                <img src="../images/3placeholder.jpg" width="248" height="107" alt="" />
+              </div>
+
+            </td>
+            <td>
+              <div class="skils">
+                <img src="../images/4placeholder.jpg" width="256" height="141" alt="" />
+              </div>
+            </td>
+
+          </tr>
+          <tr>
+            <td>
+              <div class="my_photo">
+                <img src="../images/5placeholder.jpg" width="237" height="111" alt="" />
+              </div>
+
+            </td>
+            <td>
+              <div class="skils">
+                <img src="../images/6placeholder.jpg" width="262" height="113" alt="" />
+              </div>
+            </td>
+
+          </tr>
+
         </tbody>
       </table>
 
